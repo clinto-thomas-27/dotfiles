@@ -1,0 +1,47 @@
+# Core settings
+[log]
+	date = relative
+[core]
+	excludesfile = ~/.gitignore
+[push]
+	default = simple
+	autoSetupRemote = true
+
+# Color settings
+[color]
+	ui = true
+[color "decorate"]
+	head = magenta
+	branch = bold magenta
+	remotebranch = blue
+	tag = bold red
+[color "diff"]
+	whitespace = red reverse
+	newMoved = blue
+	func = blue
+	meta = reverse
+[color "interactive"]
+	prompt = blue
+	header = yellow
+	help = magenta
+	error = bold red
+
+# Aliases
+[alias]
+	co = checkout
+	ci = commit
+	bd = branch -D
+	# (better for interactive use)
+	stat = !git diff --stat $(git review-base)
+	# list files which have changed since review_base
+	files = !git diff --name-only $(git review-base)
+	# better branch
+	bb = "!sh local_scripts/shell/better_git_branch.sh"
+	cf = "!sh local_scripts/shell/changed-files.sh"
+	br = branch
+	staash = stash --all
+[user]
+	name = Clinto Thomas
+	email = clinto.thomas@katzion.com
+[core]
+	editor = vi
