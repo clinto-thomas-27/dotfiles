@@ -1,144 +1,117 @@
 {
-  "editor.inlineSuggest.enabled": true,
-  "redhat.telemetry.enabled": true,
-  "gitlens.views.showRelativeDateMarkers": false,
-  "gitlens.hovers.currentLine.over": "line",
-  "gitlens.defaultDateLocale": null,
-  "gitlens.defaultDateFormat": null,
-  "gitlens.defaultTimeFormat": null,
-  "git.autofetch": true,
-  "github.copilot.enable": {
-    "*": true,
-    "plaintext": true,
-    "markdown": true,
-    "scminput": false,
-    "yaml": true
-  },
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
-  "dx-code-companion.autosave.enabled": false,
-  "git.openRepositoryInParentFolders": "never",
+  // -------------------------------------------------------
+  // EDITOR APPEARANCE AND BEHAVIOR
+  // -------------------------------------------------------
   "editor.fontSize": 13,
-  "SFDoc.username": "Clinto Thomas",
-  "editor.linkedEditing": true,
-  "xysfdx.optionFeatures": ["git"],
-  "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home",
-  "editor.stickyScroll.enabled": false,
-  "workbench.colorTheme": "Catppuccin Frappé",
-  "SFDoc.IncludParameterTypeInMethodHeader": true,
-  "SFDoc.IncludeModificationLogScaffoldInFileHeader": true,
-  "SFDoc.EnableForVisualforce": false,
-  "editor.formatOnSave": false,
-  "editor.accessibilitySupport": "off",
-  "terminal.integrated.fontSize": 14.5,
-  "explorer.confirmDragAndDrop": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "files.associations": {
-    "*.cmp": "html",
-    "*.cls": "apex"
-  },
-  "SFDoc.FileHeaderProperties": [
-    {
-      "name": "description"
-    },
-    {
-      "name": "author",
-      "defaultValue": "$username"
-    },
-    {
-      "name": "group",
-      "defaultValue": "Katzion"
-    },
-    {
-      "name": "last modified on",
-      "defaultValue": "$date"
-    },
-    {
-      "name": "last modified by",
-      "defaultValue": "$username"
-    }
-  ],
-  "workbench.editor.tabSizingFixedMaxWidth": 150,
-  "editor.colorDecoratorsActivatedOn": "hover",
-  "editor.hover.delay": 200,
+  "editor.fontFamily": "'JetBrains Mono','Iosevka','Monospace'",
+  "editor.fontLigatures": true,
   "editor.lineNumbers": "on",
-  "editor.accessibilityPageSize": 50,
+  "editor.minimap.enabled": false,
   "editor.minimap.autohide": true,
-  "editor.renderWhitespace": "none",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
-  "gitlens.blame.compact": false,
-  "notebook.compactView": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.renderControlCharacters": false,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.mouseWheelZoom": true,
+  "editor.hover.delay": 300,
+  "editor.colorDecoratorsActivatedOn": "hover",
+  "editor.defaultColorDecorators": "auto",
+  "editor.accessibilitySupport": "off",
+  "editor.accessibilityPageSize": 50,
   "editor.guides.bracketPairs": "active",
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "workbench.tree.indent": 10,
-  "workbench.tree.renderIndentGuides": "always",
-  "gitlens.views.worktrees.files.compact": false,
-  "git.confirmSync": false,
-  "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
-  "files.autoSaveDelay": 2000,
-  "files.autoSave": "afterDelay",
-  "editor.mouseWheelZoom": true,
-  "terminal.integrated.cursorBlinking": true,
-  "editor.cursorBlinking": "smooth",
-  "notebook.formatOnSave.enabled": true,
-  "cSpell.autoFormatConfigFile": true,
-  "editor.defaultColorDecorators": "auto",
-  "diffEditor.wordWrap": "off",
-  "debug.console.wordWrap": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "eslint.codeActionsOnSave.rules": null,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "sarif-viewer.connectToGithubCodeScanning": "off",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "cSpell.userWords": ["timedelta"],
   "editor.largeFileOptimizations": false,
-  "material-icon-theme.files.color": "#fdd835",
-  "editor.minimap.enabled": false,
-  "diffEditor.renderSideBySide": false,
-  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.codeLens": true,
+  "editor.codeLensFontSize": 12,
+  "editor.codeLensFontFamily": "'Monospace'",
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.renderLineHighlight": "all",
+
+  // -------------------------------------------------------
+  // EDITOR FORMATTING AND CODE BEHAVIOR
+  // -------------------------------------------------------
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.autoIndent": "advanced",
+  "editor.autoSurround": "languageDefined",
+  "editor.linkedEditing": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
+  },
+
+  // -------------------------------------------------------
+  // EDITOR SUGGESTIONS AND INTELLISENSE
+  // -------------------------------------------------------
+  "editor.suggestSelection": "first",
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.suggest.showStatusBar": true,
+  "editor.suggest.showIcons": true,
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.showSnippets": true,
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+
+  // -------------------------------------------------------
+  // TERMINAL CONFIGURATION
+  // -------------------------------------------------------
+  "terminal.integrated.fontSize": 14.5,
+  "terminal.integrated.fontFamily": "monospace",
+  "terminal.integrated.fontWeight": "normal",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.defaultLocation": "view",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.mouseWheelZoom": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.gpuAcceleration": "on",
   "terminal.integrated.profiles.osx": {
     "tmux-shell": {
       "path": "tmux",
       "args": ["new-session", "-A", "-s", "vscode:${workspaceFolder}"]
     }
   },
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "editor.renderControlCharacters": false,
-  "editor.wordWrap": "on",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll.stylelint": "explicit"
+  "debug.terminal.clearBeforeReusing": true,
+
+  // -------------------------------------------------------
+  // WORKBENCH APPEARANCE AND BEHAVIOR
+  // -------------------------------------------------------
+  "workbench.colorTheme": "Catppuccin Frappé",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.startupEditor": "none",
+  "workbench.editor.openPositioning": "last",
+  "workbench.editor.tabSizingFixedMaxWidth": 150,
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.statusBar.visible": true,
+  "workbench.sash.hoverDelay": 1000,
+  "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "editorGutter.addedBackground": "#00ff00",
+    "editorGutter.modifiedBackground": "#f6ff00",
+    "editorGutter.deletedBackground": "#ff0000",
+    "editorGutter.commentBackground": "#f6ff00",
+    "editorLineNumber.activeForeground": "#00ffff"
   },
-  "material-icon-theme.folders.theme": "specific",
-  "material-icon-theme.activeIconPack": "react",
-  "extensions.ignoreRecommendations": true,
-  "terminal.integrated.fontFamily": "monospace",
-  "terminal.integrated.mouseWheelZoom": true,
-  "terminal.integrated.fontWeight": "normal",
-  "editor.fontLigatures": true,
-  "editor.codeLensFontSize": 12,
-  "editor.fontFamily": "'JetBrains Mono','Iosevka','Monospace'",
-  "editor.codeLens": true,
-  "editor.codeLensFontFamily": "'Monospace'",
-  "github.copilot.editor.enableAutoCompletions": true,
-  "prettier.configPath": ".prettierrc",
-  "gitHistory.showEditorTitleMenuBarIcons": false,
-  "[shellscript]": {
-    "editor.defaultFormatter": "mkhl.shfmt"
+  "window.commandCenter": false,
+
+  // -------------------------------------------------------
+  // FILE HANDLING
+  // -------------------------------------------------------
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 2000,
+  "files.trimFinalNewlines": true,
+  // "files.insertFinalNewline": true,
+  "files.associations": {
+    "*.cmp": "html",
+    "*.cls": "apex"
   },
-  "[visualforce]": {
-    "editor.defaultFormatter": "salesforce.salesforcedx-vscode-visualforce"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "terminal.integrated.gpuAcceleration": "on",
   "files.watcherExclude": {
     "**/.sfdx/diff/**": true,
     "**/node_modules/**": true,
-    "**/.git/**": true,
     "force-app/main/default/profiles/**": true,
     "force-app/main/default/permissionsets/**": true,
     "force-app/main/default/objects/**": true,
@@ -165,84 +138,57 @@
   "files.exclude": {
     "**/.sfdx/diff/**": true
   },
+
+  // -------------------------------------------------------
+  // EXPLORER AND NAVIGATION
+  // -------------------------------------------------------
+  "explorer.compactFolders": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.decorations.badges": true,
+  "explorer.fileNesting.enabled": true,
+  "explorer.sortOrder": "default",
+  "breadcrumbs.symbolPath": "off",
+
+  // -------------------------------------------------------
+  // SEARCH CONFIGURATION
+  // -------------------------------------------------------
   "search.exclude": {
     "**/node_modules": true,
     "**/bower_components": true,
     "**/.sfdx": true
   },
-  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "search.decorations.badges": true,
+  "search.useIgnoreFiles": false,
 
-  // Source Control Manager
+  // -------------------------------------------------------
+  // SOURCE CONTROL / GIT CONFIGURATION
+  // -------------------------------------------------------
   "scm.countBadge": "all",
   "scm.defaultViewMode": "tree",
   "scm.inputFontFamily": "default",
   "scm.autoReveal": true,
   "scm.diffDecorations": "gutter",
   "scm.showChangesSummary": false,
-  "scm.showChangesSummary": false,
   "scm.showHistoryGraph": false,
   "scm.showIncomingChanges": "never",
   "scm.showOutgoingChanges": "never",
-  // Workbench color customizations
-  "workbench.colorCustomizations": {
-    "editorGutter.addedBackground": "#00ff00",
-    "editorGutter.modifiedBackground": "#f6ff00",
-    "editorGutter.deletedBackground": "#ff0000",
-    "editorGutter.commentBackground": "#f6ff00"
-  },
-  "workbench.statusBar.visible": true,
-  "workbench.sash.hoverDelay": 1000,
-  "terminal.integrated.defaultLocation": "view",
-  "debug.terminal.clearBeforeReusing": true,
-  "explorer.compactFolders": true,
-  "explorer.confirmDelete": false,
-  "explorer.decorations.badges": true,
-  "search.decorations.badges": true,
-  "explorer.fileNesting.enabled": true,
-  "explorer.sortOrder": "default",
-  "editor.autoIndent": "advanced",
-  "editor.autoSurround": "languageDefined",
-  "breadcrumbs.symbolPath": "off",
-  "workbench.startupEditor": "none",
-  "editor.suggestSelection": "first",
-  "editor.suggest.shareSuggestSelections": true,
-  "editor.suggest.showStatusBar": true,
-  "editor.suggest.showIcons": true,
-  "files.trimFinalNewlines": true,
-  // "files.insertFinalNewline": true,
-  // Editor Snippets
-  "editor.snippetSuggestions": "top",
-  "editor.suggest.showSnippets": true,
-  "salesforcecodesnippets.enableAdvancedMode": true,
-  "salesforcecodesnippets.enableAuraSnippets": true,
-  "salesforcecodesnippets.enableLWCSnippets": true,
-  "salesforcedx-vscode-slds.enabled": true,
-  "editor.copyWithSyntaxHighlighting": false,
-  "search.useIgnoreFiles": false,
-  "problems.showCurrentInStatus": false,
-  "problems.visibility": true,
-  "outline.problems.badges": true,
-  "outline.problems.colors": true,
-  "github.copilot.chat.scopeSelection": false,
-  // Diff Editor
-  "diffEditor.diffAlgorithm": "advanced",
-  "diffEditor.renderMarginRevertIcon": true,
-  "diffEditor.renderGutterMenu": true,
-  "diffEditor.renderIndicators": true,
-  "diffEditor.maxComputationTime": 0,
-  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-  "gitlens.views.openChangesInMultiDiffEditor": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.openRepositoryInParentFolders": "never",
   "git.alwaysShowStagedChangesResourceGroup": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[apex]": {},
-  "salesforcedx-vscode-apex.enable-semantic-errors": true,
-  "salesforcedx-vscode-apex.advanced.enable-completion-statistics": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "[json]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
+
+  // -------------------------------------------------------
+  // GITLENS CONFIGURATION
+  // -------------------------------------------------------
+  "gitlens.views.showRelativeDateMarkers": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.defaultDateLocale": null,
+  "gitlens.defaultDateFormat": null,
+  "gitlens.defaultTimeFormat": null,
+  "gitlens.blame.compact": false,
+  "gitlens.views.worktrees.files.compact": false,
+  "gitlens.views.openChangesInMultiDiffEditor": true,
   "gitlens.views.scm.grouped.views": {
     "commits": true,
     "branches": true,
@@ -255,16 +201,165 @@
     "searchAndCompare": false,
     "launchpad": false
   },
+
+  // -------------------------------------------------------
+  // DIFF EDITOR CONFIGURATION
+  // -------------------------------------------------------
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.wordWrap": "off",
+  "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.renderMarginRevertIcon": true,
+  "diffEditor.renderGutterMenu": true,
+  "diffEditor.renderIndicators": true,
+  "diffEditor.maxComputationTime": 0,
+  "diffEditor.ignoreTrimWhitespace": true,
+
+  // -------------------------------------------------------
+  // LANGUAGE SPECIFIC SETTINGS
+  // -------------------------------------------------------
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "mkhl.shfmt"
+  },
+  "[visualforce]": {
+    "editor.defaultFormatter": "salesforce.salesforcedx-vscode-visualforce"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
   "[yaml]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "terminal.integrated.scrollback": 10000,
-  "window.commandCenter": false,
-  "tabstronaut.moveTabGroupOnTabChange": false,
-  "workbench.editor.openPositioning": "last",
-  "tabstronaut.addPaths": false,
+  "[apex]": {},
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  // -------------------------------------------------------
+  // PROBLEMS AND DIAGNOSTICS
+  // -------------------------------------------------------
+  "problems.showCurrentInStatus": false,
+  "problems.visibility": true,
+  "outline.problems.badges": true,
+  "outline.problems.colors": true,
+
+  // -------------------------------------------------------
+  // GITHUB COPILOT SETTINGS
+  // -------------------------------------------------------
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": false,
+    "yaml": true
+  },
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.chat.scopeSelection": false,
+
+  // -------------------------------------------------------
+  // SALESFORCE SPECIFIC SETTINGS
+  // -------------------------------------------------------
+  "salesforcedx-vscode-core.show-cli-success-msg": false,
+  "salesforcedx-vscode-core.retrieve-test-code-coverage": true,
+  "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home",
+  "salesforcedx-vscode-apex.enable-semantic-errors": true,
+  "salesforcedx-vscode-apex.advanced.enable-completion-statistics": true,
+  "salesforcedx-vscode-slds.enabled": true,
+  "SFDoc.username": "Clinto Thomas",
+  "SFDoc.IncludParameterTypeInMethodHeader": true,
+  "SFDoc.IncludeModificationLogScaffoldInFileHeader": true,
+  "SFDoc.EnableForVisualforce": false,
   "SFDoc.EnableForLightningMarkup": false,
-  "workbench.productIconTheme": "fluent-icons",
+  "SFDoc.FileHeaderProperties": [
+    {
+      "name": "description"
+    },
+    {
+      "name": "author",
+      "defaultValue": "$username"
+    },
+    {
+      "name": "group",
+      "defaultValue": "Globallogic"
+    },
+    {
+      "name": "last modified on",
+      "defaultValue": "$date"
+    },
+    {
+      "name": "last modified by",
+      "defaultValue": "$username"
+    }
+  ],
+  "salesforcecodesnippets.enableAdvancedMode": true,
+  "salesforcecodesnippets.enableAuraSnippets": true,
+  "salesforcecodesnippets.enableLWCSnippets": true,
+  "xysfdx.optionFeatures": ["git"],
+
+  // -------------------------------------------------------
+  // MISC EXTENSION SETTINGS
+  // -------------------------------------------------------
+  "prettier.configPath": ".prettierrc",
+  "redhat.telemetry.enabled": true,
+  "material-icon-theme.files.color": "#fdd835",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.activeIconPack": "react",
+  "notebook.compactView": false,
+  "notebook.formatOnSave.enabled": true,
+  "cSpell.autoFormatConfigFile": true,
+  "cSpell.userWords": ["timedelta"],
+  "sarif-viewer.connectToGithubCodeScanning": "off",
+  "gitHistory.showEditorTitleMenuBarIcons": false,
+  "eslint.codeActionsOnSave.rules": null,
+  "extensions.ignoreRecommendations": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "dx-code-companion.autosave.enabled": false,
+  "tabstronaut.moveTabGroupOnTabChange": false,
+  "tabstronaut.addPaths": false,
   "python.createEnvironment.trigger": "off",
-  "diffEditor.hideUnchangedRegions.enabled": true
+  "gitlens.views.scm.grouped.hiddenViews": {
+    "commits": false,
+    "branches": false,
+    "remotes": false,
+    "stashes": false,
+    "tags": false,
+    "worktrees": false,
+    "contributors": true,
+    "repositories": true,
+    "searchAndCompare": false,
+    "launchpad": true
+  },
+  "salesforcedx-vscode-apex.java.memory": 1000,
+  "salesforcedx-vscode-apex.oas_generation_output_token_limit": 1500,
+  "salesforcedx-vscode-apex.oas_generation_strategy": "LEAST_CALLS",
+  "apex.trace.server": "verbose",
+  "statusbarerror.icon.warning": "🚀",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "github.copilot.nextEditSuggestions.enabled": true
+
+  // -------------------------------------------------------
+  // COMMENTED OUT SETTINGS
+  // -------------------------------------------------------
+  // "restoreTerminals.terminals": [
+  //   {
+  //     "splitTerminals": [
+  //       {
+  //         "name": "Apex Log Tail",
+  //         "commands": [
+  //           "sf apex tail log --debug-level SFDC_DevConsole | grep USER_DEBUG"
+  //         ]
+  //       },
+  //       {
+  //         "name": "CLI Update",
+  //         "commands": ["npm install --global @salesforce/cli"]
+  //       }
+  //     ]
+  //   }
+  // ]
 }
