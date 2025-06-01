@@ -1,0 +1,250 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "tab",
+    "command": "-editor.emmet.action.expandAbbreviation",
+    "when": "config.emmet.triggerExpansionOnTab && editorTextFocus && !editorReadonly && !editorTabMovesFocus"
+  },
+  {
+    "key": "ctrl+w",
+    "command": "expand_region",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "undo_expand_region",
+    "when": "editorTextFocus && editorHasSelection"
+  },
+  {
+    "key": "ctrl+c",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+d",
+    "command": "sf.deploy.source.path"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+r",
+    "command": "sf.retrieve.source.path"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+m",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+o",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+i",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "cmd+h e",
+    "command": "sf.anon.apex.execute.selection"
+  },
+  {
+    "key": "cmd+h r",
+    "command": "sf.internal.refreshsobjects"
+  },
+  {
+    "key": "cmd+y h",
+    "command": "workbench.action.restartExtensionHost"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+f",
+    "command": "sfflowvisualiser.generateWebview"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+c",
+    "command": "sf.task.stop"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+;",
+    "command": "git.cleanAllTracked"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+]",
+    "command": "git.stageAllTracked"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+[",
+    "command": "git.unstageAll"
+  },
+  {
+    "key": "alt+f5",
+    "command": "-workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "shift+alt+f5",
+    "command": "-workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+c",
+    "command": "gitlens.showCommitsView"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+x",
+    "command": "workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm",
+    "when": "workbench.scm.active"
+  },
+  {
+    "key": "cmd+k t",
+    "command": "-notebook.cell.collapseCellOutput",
+    "when": "notebookCellHasOutputs && notebookCellListFocused && !inputFocus && !notebookCellOutputIsCollapsed"
+  },
+  {
+    "key": "cmd+k t",
+    "command": "-notebook.cell.expandCellOutput",
+    "when": "notebookCellListFocused && notebookCellOutputIsCollapsed"
+  },
+  {
+    "key": "cmd+k d",
+    "command": "-workbench.files.action.compareWithSaved"
+  },
+  {
+    "key": "cmd+h d",
+    "command": "sf.diff"
+  },
+  {
+    "key": "cmd+h l",
+    "command": "sf.apex.log.get"
+  },
+  {
+    "key": "cmd+y c",
+    "command": "workbench.output.action.clearOutput"
+  },
+  {
+    "key": "cmd+h u",
+    "command": "sfdxlens.debug"
+  },
+  {
+    "key": "cmd+y u",
+    "command": "editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+cmd+]",
+    "command": "-editor.unfold",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+h b",
+    "command": "workbench.view.extension.metadata"
+  },
+  {
+    "key": "cmd+h ]",
+    "command": "sf.launch.replay.debugger.last.logfile"
+  },
+  {
+    "key": "cmd+h t",
+    "command": "sf.test.view.focus"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+z ctrl+shift+alt+cmd",
+    "command": "editor.action.rename",
+    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+b",
+    "command": "git.checkout"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+n",
+    "command": "git.pull"
+  },
+  {
+    "key": "cmd+h q",
+    "command": "sf.data.query.selection"
+  },
+  {
+    "key": "cmd+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "cmd+y w",
+    "command": "workbench.action.reloadWindow"
+  },
+  {
+    "key": "cmd+h o",
+    "command": "sf.set.default.org"
+  },
+  {
+    "key": "cmd+h z",
+    "command": "lwc-builder.openLWCBuilder"
+  },
+  {
+    "key": "cmd+h p",
+    "command": "sfdxPackageGen.chooseMetadata"
+  },
+  {
+    "key": "cmd+h f",
+    "command": "formattingToggle.toggleFormat"
+  },
+  {
+    "key": "cmd+y r",
+    "command": "copyRelativeFilePath",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k shift+alt+cmd+c",
+    "command": "-copyRelativeFilePath",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+y s",
+    "command": "textPowerTools.filterLinesIncludingString",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k g",
+    "command": "-textPowerTools.filterLinesIncludingString",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+h w",
+    "command": "soql.builder.open.new"
+  },
+  {
+    "key": "cmd+y p",
+    "command": "textPowerTools.filterLinesMatchingRegex"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+l",
+    "command": "lana.retrieveLogFile"
+  },
+  {
+    "key": "cmd+h a",
+    "command": "apex-pmd.runFile"
+  },
+  {
+    "key": "cmd+m l",
+    "command": "vscode-sfdx-hardis.debug.logtail"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+up",
+    "command": "git.stage",
+    "when": "!operationInProgress"
+  },
+  {
+    "key": "ctrl+shift+alt+cmd+down",
+    "command": "git.unstage",
+    "when": "!operationInProgress"
+  }
+]
