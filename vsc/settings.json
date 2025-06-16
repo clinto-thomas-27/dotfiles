@@ -212,7 +212,7 @@
   "diffEditor.renderGutterMenu": true,
   "diffEditor.renderIndicators": true,
   "diffEditor.maxComputationTime": 0,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
 
   // -------------------------------------------------------
   // LANGUAGE SPECIFIC SETTINGS
@@ -233,7 +233,8 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[yaml]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "diffEditor.ignoreTrimWhitespace": false
   },
   "[apex]": {},
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -254,7 +255,8 @@
     "plaintext": true,
     "markdown": true,
     "scminput": false,
-    "yaml": true
+    "yaml": true,
+    "apex": true
   },
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.chat.scopeSelection": false,
@@ -340,8 +342,9 @@
   "apex.trace.server": "verbose",
   "statusbarerror.icon.warning": "🚀",
   "liveServer.settings.donotShowInfoMsg": true,
-  "diffEditor.hideUnchangedRegions.enabled": true,
-  "github.copilot.nextEditSuggestions.enabled": true
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-3.5-turbo"
 
   // -------------------------------------------------------
   // COMMENTED OUT SETTINGS
